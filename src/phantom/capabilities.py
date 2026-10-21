@@ -42,6 +42,7 @@ INSTRUCTION_CAPABILITIES: dict[InstructionType, frozenset[Capability]] = {
     InstructionType.COUNTER_INCREMENT: frozenset({Capability.COUNTERS}),
     InstructionType.META_AUTHOR: frozenset({Capability.METADATA}),
     InstructionType.META_VERSION: frozenset({Capability.METADATA}),
+    InstructionType.META_LICENSE: frozenset({Capability.METADATA}),
 }
 
 

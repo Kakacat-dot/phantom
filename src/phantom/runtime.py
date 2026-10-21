@@ -172,6 +172,9 @@ class PhantomRuntime:
                     version = inst.get_string_arg(0) or ""
                     self.set_metadata("version", version)
 
+                elif inst.type == InstructionType.META_LICENSE:
+                    self.set_metadata("license", inst.get_string_arg(0) or "")
+
             except RuntimeError as exc:
                 errors.append(exc)
             except Exception as exc:

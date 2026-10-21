@@ -151,6 +151,17 @@ INSTRUCTION_REGISTRY: dict[str, InstructionSpec] = {
         ),
         description="Declare the version label for the Phantom instructions in this file.",
     ),
+    "meta.license": InstructionSpec(
+        type=InstructionType.META_LICENSE,
+        arguments=(
+            ArgumentSpec(
+                "spdx",
+                ArgumentType.STRING,
+                description="SPDX license id",
+            ),
+        ),
+        description="Declare the license of the instruction layer.",
+    ),
 }
 
 
