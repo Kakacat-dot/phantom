@@ -89,3 +89,8 @@ class TestValidator:
         prog = parse('#: phantom:0.1.0 meta.author("a")\n#: phantom:0.1.0 meta.author("b")\n')
         (finding,) = validate(prog)
         assert finding.severity == Severity.WARNING
+
+    def test_duplicate_meta_license_is_warning(self):
+        prog = parse('#: phantom:0.1.0 meta.license("MIT")\n#: phantom:0.1.0 meta.license("Apache-2.0")\n')
+        (finding,) = validate(prog)
+        assert finding.severity == Severity.WARNING

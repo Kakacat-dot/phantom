@@ -24,6 +24,7 @@ class InstructionType(Enum):
     META_VERSION = "meta.version"
     META_LICENSE = "meta.license"
 
+
 class ArgumentType(Enum):
     """Supported argument types for Phantom instructions."""
 

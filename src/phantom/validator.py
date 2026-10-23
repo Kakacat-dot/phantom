@@ -107,7 +107,7 @@ def validate(program: PhantomProgram) -> list[ValidationError]:
                         Severity.WARNING,
                     )
 
-        elif inst.type in (InstructionType.META_AUTHOR, InstructionType.META_VERSION):
+        elif inst.type in (InstructionType.META_AUTHOR, InstructionType.META_VERSION, InstructionType.META_LICENSE):
             prior: PhantomInstruction | None = metas.get(inst.type)
             if prior is not None:
                 add(

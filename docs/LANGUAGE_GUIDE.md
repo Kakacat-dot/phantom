@@ -26,6 +26,7 @@ A comment that merely contains the word `phantom` is just a comment.
 | `counter.increment(name)` | Adds 1 | Needs a prior `counter.create`; past the limit it logs an error diagnostic and stays at the limit |
 | `meta.author(name)` | Records the author | Metadata only |
 | `meta.version(version)` | Records a version label | Metadata only |
+| `meta.license(name)` | Records a license label | Metadata only |
 
 ### Events
 

@@ -22,7 +22,7 @@ Phantom does not modify Python, install import hooks, or change your environment
 
 ## Features
 
-- Seven instructions: events, bounded counters, diagnostic notes, author/version metadata ([reference](docs/LANGUAGE_GUIDE.md)).
+- eight instructionss: events, bounded counters, diagnostic notes, author/version metadata ([reference](docs/LANGUAGE_GUIDE.md)).
 - A formal grammar ([SPECIFICATION.md](SPECIFICATION.md)) and a typed, immutable IR.
 - Four encodings: **comment** (recommended), whitespace, zero-width Unicode, hybrid ([ENCODINGS.md](docs/ENCODINGS.md)).
 - Static validation with line/column diagnostics and SARIF export.
